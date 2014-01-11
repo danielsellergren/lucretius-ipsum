@@ -14,6 +14,10 @@
 		</header>
 		<section id="ipsum">
 			<textarea></textarea>
+			<input type="radio" name="language" class="language" id="latin" checked="checked" />
+			<label>Latin</label>
+			<input type="radio" name="language" class="language" id="english" />
+			<label>English</label>
 			<button id="generate">Generate</button>
 		</section>
 		<footer>

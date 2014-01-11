@@ -22,12 +22,16 @@ header h2 {
 section#ipsum {
 	clear: both;
 	width: 100%;
+	text-align: center;
 }
 section#ipsum textarea {
 	display: block;
 	width: 90%;
 	height: 200px;
 	margin: 0 5% 10px 5%;
+}
+section#ipsum input[type="radio"] {
+
 }
 section#ipsum button#generate {
 	clear: both;
