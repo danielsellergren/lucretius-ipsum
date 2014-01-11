@@ -13,8 +13,7 @@
 			<h2>Latin/English filler text generator using <em><a href="http://en.wikipedia.org/wiki/De_rerum_natura">De rerum natura</a></em> by Lucretius</h2>
 		</header>
 		<section id="ipsum">
-			<textarea id="latin"></textarea>
-			<textarea id="english"></textarea>
+			<textarea></textarea>
 			<button id="generate">Generate</button>
 		</section>
 		<footer>
