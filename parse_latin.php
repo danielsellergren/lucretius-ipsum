@@ -1,31 +1,46 @@
-<?php 
+<?php
 
-	// Open raw files separated from http://www.gutenberg.org/files/785/785-h/785-h.htm
-	$english_file_name = "./raw/english1.html";
-	$english_file = file_get_contents($english_file_name);
+	// Turn off warnings because of malformed HTML
+	error_reporting(E_ERROR);
 
-	$english_file_stripped = strip_tags($english_file, '<h2>');
+	// Open raw file from http://www.hs-augsburg.de/~harsch/Chronologia/Lsante01/Lucretius/luc_rer1.html
+	$latin_file_name = "./raw/latin1.html";
+	$latin_file = file_get_contents($latin_file_name);
 
-	$english_sections = explode('<h2>', $english_file_stripped);
+	// Replace &nbsp; character before DOM parsing
+	$latin_file = str_replace('&nbsp;', '@nbsp;', $latin_file);
+	$latin_file = str_replace('&euml;', '@euml;', $latin_file);
+	$latin_file = str_replace('&lt;', '@lt;', $latin_file);
+	$latin_file = str_replace('&gt;', '@gt;', $latin_file);
 
-	$english_passages = array();
-	foreach ($english_sections as $english_section) {
-		$english_section_stripped = trim(implode("\n", array_slice(explode("\n", $english_section), 8)));
+	// Break into raw passages
+	$latin_passages_raw = explode('<h3>@nbsp;</h3>', $latin_file);
 
-		$english_section_passages = explode("\n\n", $english_section_stripped);
+	// Format passages in plain text
+	$latin_passages = array();
+	foreach ($latin_passages_raw as $latin_passage_raw) {
 
-		foreach ($english_section_passages as $english_section_passage) {
-			if (trim($english_section_passage) !== "") {
-				$english_passages[] = str_replace('    ', '', trim($english_section_passage));
-			}
+		$latin_passage = "";
+
+		// Open as DOM and parse for lines
+		$DOM = new DOMDocument;
+		$DOM->loadHTML($latin_passage_raw);
+		$lines = $DOM->getElementsByTagName('h3');
+
+		for ($i = 0; $i < $lines->length; $i++) {
+			$latin_line = trim($lines->item($i)->nodeValue);
+
+			$latin_passage = str_replace('@euml;', '&euml;', $latin_passage);
+			$latin_passage = str_replace('@lt;', '&lt;', $latin_passage);
+			$latin_passage = str_replace('@lt;', '&gt;', $latin_passage);
+
+			$latin_passage .= $lines->item($i)->nodeValue . "\n";
+		}
+
+		if (trim($latin_passage)) {
+			$latin_passages[] = trim($latin_passage);
 		}
 
 	}
-
-	$english_json = json_encode($english_passages);
-
-	$english_json_file = fopen('./json/english1.json', 'w');
-	fwrite($english_json_file, $english_json);
-	fclose($english_json_file);
 
 ?>
