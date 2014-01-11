@@ -1,14 +1,11 @@
 $(function() {
 
 	$('button#generate').on('click', function() {
-		alert("Generating.");
+		$.getJSON( "lucretius.json", function(data) {
+			console.log(data);
+			$('#latin').html(data.latin);
+			$('#english').html(data.english);
+		});
 	});
-
-// $("a[href^='http']").each(function() {
-//     $(this).css({
-//         background: "url(http://g.etfv.co/" + this.href + ") left center no-repeat",
-//         "padding-left": "50px"
-//     });
-// });
-
+	
 });
