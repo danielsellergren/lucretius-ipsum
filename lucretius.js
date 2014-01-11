@@ -2,10 +2,12 @@ $(function() {
 
 	// On Generate click: Call for sample data in JSON
 	$('button#generate').on('click', function() {
-		$.getJSON( "lucretius.json", function(data) {
-			console.log(data);
-			$('#latin').html(data.latin);
-			$('#english').html(data.english);
+		var language = $('input.language:checked').attr('id');
+		var book = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+		$.getJSON( "./json/" + language + book + ".json", function(data) {
+			var passage = data[Math.floor(Math.random() * (data.length - 0 + 1)) + 0];
+			console.log(passage);
+			$('textarea').html(passage);
 		});
 	});
 
