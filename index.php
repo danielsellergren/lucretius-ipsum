@@ -10,7 +10,7 @@
 	<div id="container">
 		<header>
 			<h1>Lucretius Ipsum</h1>
-			<h2>Latin/English filler text generator using <em>De rerum natura</em> by Lucretius</h2>
+			<h2>Latin/English filler text generator using <em><a href="http://en.wikipedia.org/wiki/De_rerum_natura">De rerum natura</a></em> by Lucretius</h2>
 		</header>
 		<section id="ipsum">
 			<textarea id="latin"></textarea>
