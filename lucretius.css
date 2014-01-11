@@ -1,1 +1,62 @@
-lucretius
+/* 
+ * Main stylesheet for Lucretius Ipsum Generator
+ * Author: Daniel Sellergren
+*/
+
+div#container {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+header {
+	clear: both;
+	text-align: center;
+}
+header h1 {
+
+}
+header h2 {
+
+}
+
+section#ipsum {
+	clear: both;
+	width: 100%;
+}
+section#ipsum textarea {
+	width: 45%;
+	height: 200px;
+	margin-bottom: 10px;
+}
+section#ipsum textarea#latin {
+	margin-left: 2%;
+	margin-right: 2%;
+	float: left;
+}
+section#ipsum textarea#english {
+	margin-left: 3%;
+	margin-right: 1%;
+	float: left;
+}
+section#ipsum button#generate {
+	clear: both;
+	margin: 10px auto;
+	display: block;
+}
+
+footer {
+	clear: both;
+}
+footer span {
+	display: block;
+	clear: both;
+	text-align: center;
+	margin: 10px 0;
+}
+footer span a {
+
+}
+
+a {
+	display: inline-block;
+}
