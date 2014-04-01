@@ -3,25 +3,48 @@
  * Author: Daniel Sellergren
 */
 
+/*
+
+  Zeus/Jupter Color Palette
+  #FFFAF0
+  #F5DEB3
+  #433F42
+  #7A777A
+  #D1D1D1
+
+*/
+
+body {
+	background: #FFFAF0;
+}
 div#container {
 	width: 90%;
 	max-width: 800px;
 	margin: 0 auto;
 }
 header {
-	clear: both;
+	/*clear: both;*/
 	text-align: center;
+	width: 50%;
+	float: left;
 }
 header h1 {
-
+	/*width: 50%;*/
+/*	float: left;
+	clear: none;*/
 }
 header h2 {
-
+/*	width: 50%;
+	clear: none;
+	float: left;*/
 }
-
+img {
+	width: 50%;
+	float: left;
+}
 section#ipsum {
-	clear: both;
-	width: 100%;
+	float: right;
+	width: 50%;
 	text-align: center;
 }
 section#ipsum textarea {

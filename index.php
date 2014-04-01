@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div id="container">
+		<img src="img/lucretius_fade2.jpg" alt="Lucretius" />
 		<header>
 			<h1>Lucretius Ipsum</h1>
 			<h2>Latin/English filler text generator using <em><a href="http://en.wikipedia.org/wiki/De_rerum_natura">De rerum natura</a></em> by Lucretius</h2>
