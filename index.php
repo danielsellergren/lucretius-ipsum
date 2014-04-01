@@ -18,9 +18,9 @@
 			<textarea></textarea>
 			<button id="generate">Generate</button>
 			<input type="radio" name="language" class="language" id="latin" checked="checked" />
-			<label>Latin</label>
+			<label for="latin">Latin</label>
 			<input type="radio" name="language" class="language" id="english" />
-			<label>English</label>
+			<label for="english">English</label>
 		</section>
 		<footer>
 			<p>Latin/English filler text generator using <em><a href="http://en.wikipedia.org/wiki/De_rerum_natura">De rerum natura</a></em> by Lucretius</p>
