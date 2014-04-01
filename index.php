@@ -24,8 +24,8 @@
 		</section>
 		<footer>
 			<p>Latin/English filler text generator using <em><a href="http://en.wikipedia.org/wiki/De_rerum_natura">De rerum natura</a></em> by Lucretius</p>
-			<span id="provided-by">Text provided by <a href="http://www.thelatinlibrary.com/lucretius/lucretius1.shtml">The Latin Library</a> and <a href="http://www.gutenberg.org/files/785/785-h/785-h.htm">Project Gutenberg</a></span>
-			<span id="credit">Code by <a href="http://danielsellergren.com">Daniel Sellergren</a> | <a href="https://github.com/danielsellergren/lucretius-ipsum">Source Code</a></span>
+			<span id="provided-by">Text provided by <a href="http://www.hs-augsburg.de/~harsch/Chronologia/Lsante01/Lucretius/luc_rer0.html">Bibliotheca Augustana</a> and <a href="http://www.gutenberg.org/files/785/785-h/785-h.htm">Project Gutenberg</a></span>
+			<span id="credit">Code by <a href="http://danielsellergren.com">Daniel Sellergren</a> | <a href="https://github.com/danielsellergren/lucretius-ipsum">Source</a></span>
 		</footer>
 	</div>
 </body>
