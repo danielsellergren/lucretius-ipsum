@@ -3,20 +3,25 @@
  * Author: Daniel Sellergren
 */
 
+/* Palette
+/*=========================================*/
 /*
-
-  Zeus/Jupter Color Palette
   #FFFAF0
   #F5DEB3
   #433F42
   #7A777A
   #D1D1D1
-
 */
+
+/* Global
+/*=========================================*/
 
 body {
 	background: #FFFAF0;
 	font-family: 'Crimson Text', serif;
+	color: #433F42;
+}
+a {
 	color: #433F42;
 }
 div#container {
@@ -24,6 +29,10 @@ div#container {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+/* Header
+/*=========================================*/
+
 header {
 	text-align: center;
 	width: 50%;
@@ -35,22 +44,14 @@ header h1 {
 	font-size: 2.5em;
 	color: #433F42;
 }
-#ipsum h2 {
-	/*display: none;*/
-	font-size: 1.1em;
-	font-weight: 400;
-	/*color: #7A777A;*/
-}
-#ipsum em {
-	font-style: normal;
-}
-#ipsum a {
-	color: #433F42;
-}
 img {
 	width: 50%;
 	float: left;
 }
+
+/* Form
+/*=========================================*/
+
 section#ipsum {
 	float: right;
 	width: 50%;
@@ -59,7 +60,6 @@ section#ipsum {
 section#ipsum textarea {
 	display: block;
 	width: 90%;
-	/*height: 375px;*/
 	height: 250px;
 	margin: 0 5% 10px 5%;
 	border: 1px solid #D1D1D1;
@@ -81,11 +81,19 @@ section#ipsum button#generate {
 	border: none;
 }
 
+/* Footer
+/*=========================================*/
+
 footer {
 	clear: both;
 }
 footer p {
 	text-align: center;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+footer em {
+	font-style: normal;
 }
 footer span {
 	display: block;
