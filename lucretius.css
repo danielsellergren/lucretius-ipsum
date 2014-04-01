@@ -24,6 +24,9 @@ body {
 a {
 	color: #433F42;
 }
+em {
+	font-style: normal;
+}
 div#container {
 	width: 90%;
 	max-width: 800px;
@@ -87,23 +90,19 @@ section#ipsum button#generate {
 footer {
 	clear: both;
 }
-footer p {
-	text-align: center;
-	font-size: 1.1em;
-	font-weight: 400;
-}
-footer em {
-	font-style: normal;
-}
-footer span {
+footer p, footer span {
 	display: block;
 	clear: both;
 	text-align: center;
 	margin: 10px 0;
+	font-size: 1em;
 }
 footer span a {
 	display: inline-block;
 }
+
+/* Mobile
+/*=========================================*/
 
 @media only screen and (max-width : 480px) {
 
