@@ -16,6 +16,8 @@
 
 body {
 	background: #FFFAF0;
+	font-family: 'Crimson Text', serif;
+	color: #433F42;
 }
 div#container {
 	width: 90%;
@@ -23,20 +25,27 @@ div#container {
 	margin: 0 auto;
 }
 header {
-	/*clear: both;*/
 	text-align: center;
 	width: 50%;
 	float: left;
 }
 header h1 {
-	/*width: 50%;*/
-/*	float: left;
-	clear: none;*/
+	font-family: 'Cinzel', serif;
+	font-weight: 400;
+	font-size: 2.5em;
+	color: #433F42;
 }
-header h2 {
-/*	width: 50%;
-	clear: none;
-	float: left;*/
+#ipsum h2 {
+	/*display: none;*/
+	font-size: 1.1em;
+	font-weight: 400;
+	/*color: #7A777A;*/
+}
+#ipsum em {
+	font-style: normal;
+}
+#ipsum a {
+	color: #433F42;
 }
 img {
 	width: 50%;
@@ -50,20 +59,33 @@ section#ipsum {
 section#ipsum textarea {
 	display: block;
 	width: 90%;
-	height: 200px;
+	/*height: 375px;*/
+	height: 250px;
 	margin: 0 5% 10px 5%;
+	border: 1px solid #D1D1D1;
+	font-size: 1em;
+	font-family: 'Crimson Text', serif;
 }
 section#ipsum input[type="radio"] {
 
 }
 section#ipsum button#generate {
 	clear: both;
-	margin: 10px auto;
+	margin: 30px auto 10px auto;
 	display: block;
+	background: #433F42;
+	color: #FFFAF0;
+	padding: 10px 20px;
+	font-size: 1.2em;
+	font-family: 'Crimson Text', serif;
+	border: none;
 }
 
 footer {
 	clear: both;
+}
+footer p {
+	text-align: center;
 }
 footer span {
 	display: block;
